@@ -7,7 +7,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import Index from './src/screens/Index';
+import Index from './src/navigation/Index';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {colors} from './src/Utilis/theme';
 const App = () => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
-import WelcomeScreen from './Auth/WelcomeScreen';
-import UserTypeScreen from './Auth/UserTypeScreen';
+import WelcomeScreen from '../screens/Auth/WelcomeScreen';
+import UserTypeScreen from '../screens/Auth/UserTypeScreen';
 const Stack = createStackNavigator();
 
 const Index = () => {
