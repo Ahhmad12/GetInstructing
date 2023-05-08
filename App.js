@@ -16,7 +16,7 @@ const App = () => {
   }, []);
   const isDarkMode = useColorScheme() === 'dark';
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : colors.lightGray,
+    backgroundColor: isDarkMode ? Colors.darker : colors.white,
   };
 
   const MyStatusBar = ({backgroundColor, ...props}) => (
@@ -32,10 +32,7 @@ const App = () => {
   );
   return (
     <View style={{flex: 1}}>
-      <MyStatusBar
-        backgroundColor={colors.lightGray}
-        barStyle="light-content"
-      />
+      <MyStatusBar backgroundColor={colors.white} barStyle="light-content" />
       <Index />
     </View>
   );
