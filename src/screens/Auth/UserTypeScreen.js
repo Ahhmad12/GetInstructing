@@ -28,7 +28,9 @@ const UserTypeScreen = () => {
       <ScrollView>
         <CommonHeader title={strings.pleaseSelect} />
         <View style={styles.buttonPosition}>
-          <TouchableOpacity style={styles.buttonStyle}>
+          <TouchableOpacity
+            style={styles.buttonStyle}
+            onPress={() => navigation.navigate('Register')}>
             <Image style={styles.imageSize3} source={images.instructor} />
             <Text style={styles.smallText}>{strings.continueAsInstructor}</Text>
           </TouchableOpacity>
@@ -39,19 +41,20 @@ const UserTypeScreen = () => {
             </TouchableOpacity>
           </View>
         </View>
-        <View style={styles.buttonPosition2}>
-          <Button
-            onPress={navigation.goBack}
-            title={strings.goBack}
-            width={177}
-            backgroundColor={colors.orange}
-            borderRadius={10}
-            height={48}
-            fontSize={16}
-            fontWeight={600}
-          />
-        </View>
       </ScrollView>
+
+      <View style={styles.buttonPosition2}>
+        <Button
+          onPress={navigation.goBack}
+          title={strings.goBack}
+          width={177}
+          backgroundColor={colors.orange}
+          borderRadius={10}
+          height={48}
+          fontSize={16}
+          fontWeight={600}
+        />
+      </View>
     </View>
   );
 };

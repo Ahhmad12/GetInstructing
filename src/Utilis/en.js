@@ -12,4 +12,12 @@ export const strings = {
   continueAsInstructor: 'Continue as a\ninstructor/driving\nschool',
   continueAsStudent: 'Continue as\na Student',
   goBack: 'Go Back',
+  newAccount: 'New Account',
+  signupStarted: 'Signup and get started',
+  personalName: 'Personal name',
+  phone: 'Phone',
+  email: 'Email (optional)',
+  confirmPassword: 'Confirm Password',
+  alreadyAccount: 'Already have an account?',
+  signIn: ' Sign In',
 };
